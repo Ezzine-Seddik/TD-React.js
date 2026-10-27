@@ -30,7 +30,7 @@ const {destination: ville}= voyage;
 const {prix: prixV="0",duree: dureeV="0"}=voyage;
 //console.log(prixV,dureeV);
 //4
-function afficherVoyage(...V){
-    console.log(V);
+function afficherVoyage({destination,prix,duree,transport,hotel}){
+    console.log(destination,prix,duree,transport,hotel);
 }
-//afficherVoyage(voyage);
+afficherVoyage(voyage);
